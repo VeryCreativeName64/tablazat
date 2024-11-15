@@ -1,0 +1,40 @@
+table, td, th {
+    border: 1px solid gray;
+}
+
+td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 32px; /* A sakk szimbólumok méretének beállítása */
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    min-width: 500px;
+}
+
+/* Váltakozó háttérszínek a sakktábla mintázat kialakításához */
+tbody tr:nth-child(odd) td:nth-child(even),
+tbody tr:nth-child(even) td:nth-child(odd) {
+    background-color: rgb(173, 184, 192);
+}
+
+tbody tr:nth-child(odd) td:nth-child(odd),
+tbody tr:nth-child(even) td:nth-child(even) {
+    background-color: white;
+}
+
+/* Fejléc és lábléc stílusa */
+thead tr, tfoot tr {
+    background-color: white;
+}
+
+th {
+    color: black;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
